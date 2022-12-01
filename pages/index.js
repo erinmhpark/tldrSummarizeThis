@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="flex justify-evenly inset-x-0 p-2 bottom-0 fixed">
+      <footer className="flex justify-evenly inset-x-0 p-2 bottom-0 fixed text-slate-600">
         <div> © Minhee Park</div>
         <Link href="https://openai.com/">Powered by&nbsp; OpenAI</Link>
         <div className="flex justify-around gap-4">
