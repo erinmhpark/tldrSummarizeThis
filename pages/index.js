@@ -52,11 +52,17 @@ export default function Home() {
             disabled={loading}
           />
           <div className="flex justify-evenly py-5">
-            <input type="reset" />
+            {/* <input type="reset" /> */}
+            <button
+              type="reset"
+              className="px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md  bg-gray-500 hover:bg-gray-400 transition ease-in-out duration-150"
+            >
+              Reset
+            </button>
             <button
               type="Submit"
               className={cn(
-                "inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150",
+                "inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-700 hover:bg-indigo-600 transition ease-in-out duration-150",
                 loading ? "cursor-not-allowed" : ""
               )}
               disabled={loading}
@@ -86,16 +92,15 @@ export default function Home() {
                 "Submit"
               )}
             </button>
-            {/* <input
-              className="border border-white p-1 rounded-md disabled:bg-red-500"
-              type="submit"
-              disabled={loading}
-            /> */}
           </div>
         </form>
 
         <div className="flex flex-col justify-between w-1/2 ">
-          <div className="p-1 border">Original:&nbsp; </div>
+          {/* <div className="p-1 border">
+            Original Text:&nbsp;
+            {summary ? <p>{data.prompt}</p> : null}
+          </div> */}
+          <hr className="" />
           <div className="p-1 border">
             Summary: {summary ? <p className="w-100">{summary}</p> : null}
           </div>
