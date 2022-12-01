@@ -14,9 +14,6 @@ export default function Home() {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
     const initialPrompt = "Summarize this:\n" + data.prompt;
-    // console.log(initialPrompt);
-    // console.log(formData);
-    // console.log(data.prompt);
 
     const response = await fetch("/api/openAI", {
       method: "POST",
@@ -28,7 +25,6 @@ export default function Home() {
 
     const summaryData = await response.json();
     setSummary(summaryData.result.choices[0].text);
-    console.log(summary);
     setLoading(false);
   }
 
@@ -52,7 +48,6 @@ export default function Home() {
             disabled={loading}
           />
           <div className="flex justify-evenly py-5">
-            {/* <input type="reset" /> */}
             <button
               type="reset"
               className="px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md  bg-gray-500 hover:bg-gray-400 transition ease-in-out duration-150"
@@ -96,10 +91,6 @@ export default function Home() {
         </form>
 
         <div className="flex flex-col justify-between w-1/2 ">
-          {/* <div className="p-1 border">
-            Original Text:&nbsp;
-            {summary ? <p>{data.prompt}</p> : null}
-          </div> */}
           <hr className="" />
           <div className="p-1 border">
             Summary: {summary ? <p className="w-100">{summary}</p> : null}
@@ -116,55 +107,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-
-    // To dos
-    // Make the footer stick to the bottom
-    //
-    // <div className={styles.container}>
-    //
-    //   <main className={styles.main}>
-    //     <h1 className={styles.title}>
-    //       Welcome to <a href="https://nextjs.org">Next.js!</a>
-    //     </h1>
-
-    //     <p className={styles.description}>
-    //       Get started by editing{' '}
-    //       <code className={styles.code}>pages/index.js</code>
-    //     </p>
-
-    //     <div className={styles.grid}>
-    //       <a href="https://nextjs.org/docs" className={styles.card}>
-    //         <h2>Documentation &rarr;</h2>
-    //         <p>Find in-depth information about Next.js features and API.</p>
-    //       </a>
-
-    //       <a href="https://nextjs.org/learn" className={styles.card}>
-    //         <h2>Learn &rarr;</h2>
-    //         <p>Learn about Next.js in an interactive course with quizzes!</p>
-    //       </a>
-
-    //       <a
-    //         href="https://github.com/vercel/next.js/tree/canary/examples"
-    //         className={styles.card}
-    //       >
-    //         <h2>Examples &rarr;</h2>
-    //         <p>Discover and deploy boilerplate example Next.js projects.</p>
-    //       </a>
-
-    //       <a
-    //         href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //         className={styles.card}
-    //       >
-    //         <h2>Deploy &rarr;</h2>
-    //         <p>
-    //           Instantly deploy your Next.js site to a public URL with Vercel.
-    //         </p>
-    //       </a>
-    //     </div>
-    //   </main>
-
-    // </div>
   );
 }
