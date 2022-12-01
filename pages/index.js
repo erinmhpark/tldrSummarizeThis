@@ -93,7 +93,7 @@ export default function Home() {
         <div className="flex flex-col justify-between w-1/2 ">
           <hr className="my-5 bg-gray-200 border-0 h-px dark:bg-gray-700" />
           <div className="p-1 rounded-md ">
-            Summary: {summary ? <p className="w-100">{summary}</p> : null}
+            Summary: {summary ? <p className="w-100 p-1">{summary}</p> : null}
           </div>
         </div>
       </main>
