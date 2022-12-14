@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../lib/helpers";
+import Navbar from "./navbar";
 
 export default function Home() {
   const [summary, setSummary] = useState("");
@@ -36,6 +37,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="py-3 px-0 gap-1 flex flex-col justify-center items-center min-h-screen">
+        <Navbar />
         <h1 className="p-1 text-6xl text-center font-bold">
           TL;DR Summarize This
         </h1>
