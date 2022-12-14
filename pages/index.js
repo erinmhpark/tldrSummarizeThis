@@ -103,7 +103,11 @@ export default function Home() {
           Powered by&nbsp; OpenAI
         </Link>
         <div className="flex justify-around gap-4 pr-10">
-          <a href="https://github.com/erinmhpark">
+          <a
+            href="https://github.com/erinmhpark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
