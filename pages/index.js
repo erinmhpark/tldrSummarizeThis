@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../lib/helpers";
-import Navbar from "./navbar";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   const [summary, setSummary] = useState("");
