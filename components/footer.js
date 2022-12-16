@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 export default function footer() {
   return (
-    <footer className="flex justify-evenly inset-x-0 p-2 bottom-1 fixed text-slate-600 font-medium text-sm items-center">
+    <footer className="flex justify-evenly p-2 inset-x-0 bottom-1 fixed mt-auto text-slate-600 font-medium text-sm items-center">
       <div>© 2022 Minhee Park</div>
       <Link target="_blank" href="https://openai.com/">
         Powered by&nbsp; OpenAI
@@ -28,3 +28,4 @@ export default function footer() {
     </footer>
   );
 }
+//inset-x-0 bottom-1 fixed

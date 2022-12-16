@@ -18,7 +18,7 @@ export default function Navbar() {
                 : ""
             }
           >
-            Tl;DR
+            TL;DR
           </Link>
         </li>
         <li>
