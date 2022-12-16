@@ -9,7 +9,7 @@ export default function footer() {
       </Link>
       <div className="flex justify-around gap-4 pr-10">
         <a
-          href="https://github.com/erinmhpark"
+          href="https://github.com/erinmhpark/tldrSummarizeThis"
           target="_blank"
           rel="noopener noreferrer"
         >
