@@ -10,6 +10,10 @@ The app utilizes openAI API to provide a user-friendly interface that allows you
 3. Click “Summarize” or "Ask button.
 4. View the generated summary or answer the question
 
+## How to Access and Use Locally
+
+To access and use this project locally, please fork this repository. Then, use command line and run `npm install` to install all necessary dependencies. Also, make sure to add OPENAI_API_KEY to connect with openAI API. Once all the dependencies have been installed, you can start the development server by running `npm run dev`. Finally, you can access the project locally at `localhost:3000` in your browser.
+
 ## Technology
 
 - JavaScript
